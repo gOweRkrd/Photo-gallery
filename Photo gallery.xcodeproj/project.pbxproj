@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50C5E60D2A541CA60048D368 /* Photo_galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E60C2A541CA60048D368 /* Photo_galleryApp.swift */; };
-		50C5E60F2A541CA60048D368 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E60E2A541CA60048D368 /* ContentView.swift */; };
+		50C5E60F2A541CA60048D368 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E60E2A541CA60048D368 /* MainView.swift */; };
 		50C5E6112A541CA70048D368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E6102A541CA70048D368 /* Assets.xcassets */; };
 		50C5E6142A541CA70048D368 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E6132A541CA70048D368 /* Preview Assets.xcassets */; };
 		50C5E61E2A541D370048D368 /* ContentSizeCategory+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E61D2A541D370048D368 /* ContentSizeCategory+Extension.swift */; };
@@ -21,12 +21,17 @@
 		50C5E62E2A541D8D0048D368 /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E62D2A541D8D0048D368 /* SFProDisplay-Regular.otf */; };
 		50C5E6302A541D920048D368 /* SFProRounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E62F2A541D920048D368 /* SFProRounded-Semibold.otf */; };
 		50C5E6322A541D9A0048D368 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E6312A541D9A0048D368 /* R.swift */; };
+		50C5E63F2A5421D20048D368 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E63E2A5421D20048D368 /* NetworkModel.swift */; };
+		50C5E6412A5423BF0048D368 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E6402A5423BF0048D368 /* MainViewModel.swift */; };
+		50C5E6512A5449BA0048D368 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 50C5E6502A5449BA0048D368 /* SDWebImageSwiftUI */; };
+		50E4FBBD2A55572B005DE30F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4FBBC2A55572B005DE30F /* DetailView.swift */; };
+		50E4FBC32A5587A2005DE30F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E4FBC22A5587A2005DE30F /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50C5E6092A541CA60048D368 /* Photo gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C5E60C2A541CA60048D368 /* Photo_galleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_galleryApp.swift; sourceTree = "<group>"; };
-		50C5E60E2A541CA60048D368 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50C5E60E2A541CA60048D368 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		50C5E6102A541CA70048D368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C5E6132A541CA70048D368 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50C5E61D2A541D370048D368 /* ContentSizeCategory+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContentSizeCategory+Extension.swift"; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		50C5E62F2A541D920048D368 /* SFProRounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProRounded-Semibold.otf"; sourceTree = "<group>"; };
 		50C5E6312A541D9A0048D368 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		50C5E6332A541DB10048D368 /* Photo-gallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Photo-gallery-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50C5E63E2A5421D20048D368 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		50C5E6402A5423BF0048D368 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		50E4FBBC2A55572B005DE30F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		50E4FBC22A5587A2005DE30F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +56,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C5E6512A5449BA0048D368 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5095E1EA2A546AB800CD7943 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				50C5E60E2A541CA60048D368 /* MainView.swift */,
+				50C5E6402A5423BF0048D368 /* MainViewModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		50C5E6002A541CA60048D368 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +93,7 @@
 			children = (
 				50C5E6332A541DB10048D368 /* Photo-gallery-Info.plist */,
 				50C5E61A2A541CE60048D368 /* App */,
+				50C5E6352A5421990048D368 /* NetworkService */,
 				50C5E61B2A541CF40048D368 /* Modules */,
 				50C5E61C2A541D1B0048D368 /* Extensions */,
 				50C5E6272A541D5A0048D368 /* Resources */,
@@ -101,7 +121,8 @@
 		50C5E61B2A541CF40048D368 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				50C5E60E2A541CA60048D368 /* ContentView.swift */,
+				5095E1EA2A546AB800CD7943 /* MainScreen */,
+				50E4FBBB2A55571A005DE30F /* DetailScreen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -124,6 +145,7 @@
 				50C5E6282A541D760048D368 /* Fonts */,
 				50C5E6102A541CA70048D368 /* Assets.xcassets */,
 				50C5E6312A541D9A0048D368 /* R.swift */,
+				50E4FBC22A5587A2005DE30F /* Launch Screen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,6 +159,22 @@
 				50C5E62F2A541D920048D368 /* SFProRounded-Semibold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		50C5E6352A5421990048D368 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				50C5E63E2A5421D20048D368 /* NetworkModel.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		50E4FBBB2A55571A005DE30F /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				50E4FBBC2A55572B005DE30F /* DetailView.swift */,
+			);
+			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +194,9 @@
 			dependencies = (
 			);
 			name = "Photo gallery";
+			packageProductDependencies = (
+				50C5E6502A5449BA0048D368 /* SDWebImageSwiftUI */,
+			);
 			productName = "Photo gallery";
 			productReference = 50C5E6092A541CA60048D368 /* Photo gallery.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 50C5E6002A541CA60048D368;
+			packageReferences = (
+				50C5E64F2A5449BA0048D368 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 50C5E60A2A541CA60048D368 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,6 +248,7 @@
 				50C5E6302A541D920048D368 /* SFProRounded-Semibold.otf in Resources */,
 				50C5E62E2A541D8D0048D368 /* SFProDisplay-Regular.otf in Resources */,
 				50C5E62A2A541D820048D368 /* SFProDisplay-Medium.otf in Resources */,
+				50E4FBC32A5587A2005DE30F /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint && swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint && swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -237,10 +282,13 @@
 			files = (
 				50C5E61E2A541D370048D368 /* ContentSizeCategory+Extension.swift in Sources */,
 				50C5E6202A541D3D0048D368 /* VStack+Extension.swift in Sources */,
-				50C5E60F2A541CA60048D368 /* ContentView.swift in Sources */,
+				50C5E63F2A5421D20048D368 /* NetworkModel.swift in Sources */,
+				50C5E60F2A541CA60048D368 /* MainView.swift in Sources */,
 				50C5E6242A541D480048D368 /* UIColor+Extension.swift in Sources */,
+				50C5E6412A5423BF0048D368 /* MainViewModel.swift in Sources */,
 				50C5E6322A541D9A0048D368 /* R.swift in Sources */,
 				50C5E6222A541D420048D368 /* HStack+Extension.swift in Sources */,
+				50E4FBBD2A55572B005DE30F /* DetailView.swift in Sources */,
 				50C5E6262A541D4E0048D368 /* View+Extension.swift in Sources */,
 				50C5E60D2A541CA60048D368 /* Photo_galleryApp.swift in Sources */,
 			);
@@ -299,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -353,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -371,12 +419,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Photo gallery/Preview Content\"";
+				DEVELOPMENT_TEAM = 53J92LZ5NM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Photo-gallery-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Для сохранения изображений в вашу фотобиблиотеку";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,12 +449,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Photo gallery/Preview Content\"";
+				DEVELOPMENT_TEAM = 53J92LZ5NM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Photo-gallery-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Для сохранения изображений в вашу фотобиблиотеку";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +493,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50C5E64F2A5449BA0048D368 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50C5E6502A5449BA0048D368 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50C5E64F2A5449BA0048D368 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50C5E6012A541CA60048D368 /* Project object */;
 }
