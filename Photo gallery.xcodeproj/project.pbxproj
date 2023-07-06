@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50624B872A56986800454479 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50624B862A56986800454479 /* NetworkManager.swift */; };
 		50C5E60D2A541CA60048D368 /* Photo_galleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E60C2A541CA60048D368 /* Photo_galleryApp.swift */; };
 		50C5E60F2A541CA60048D368 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5E60E2A541CA60048D368 /* MainView.swift */; };
 		50C5E6112A541CA70048D368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C5E6102A541CA70048D368 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50624B862A56986800454479 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		50C5E6092A541CA60048D368 /* Photo gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C5E60C2A541CA60048D368 /* Photo_galleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_galleryApp.swift; sourceTree = "<group>"; };
 		50C5E60E2A541CA60048D368 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				50C5E63E2A5421D20048D368 /* NetworkModel.swift */,
+				50624B862A56986800454479 /* NetworkManager.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50624B872A56986800454479 /* NetworkManager.swift in Sources */,
 				50C5E61E2A541D370048D368 /* ContentSizeCategory+Extension.swift in Sources */,
 				50C5E6202A541D3D0048D368 /* VStack+Extension.swift in Sources */,
 				50C5E63F2A5421D20048D368 /* NetworkModel.swift in Sources */,
