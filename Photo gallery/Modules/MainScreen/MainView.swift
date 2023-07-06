@@ -9,7 +9,7 @@ struct MainView: View {
         ZStack {
             Color(R.Colors.white).edgesIgnoringSafeArea(.all)
             NavigationView {
-                Group {
+                VStack {
                     if viewModel.isLoading {
                         progressView
                     } else if !viewModel.photos.isEmpty {
@@ -45,6 +45,7 @@ private extension MainView {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .animation(.linear(duration: 0.4))
                     }
                 }
             }
@@ -69,5 +70,11 @@ private extension MainView {
         Text(R.MainView.refreshText)
             .customFont(SFProDisplay.bold, category: .extraLarge)
             .foregroundColor(Color(R.Colors.black))
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
     }
 }

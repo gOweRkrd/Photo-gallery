@@ -11,23 +11,23 @@ extension ContentSizeCategory {
     var size: CGFloat {
         switch self {
         case .extraSmall:
-            return 12
+                return 12
         case .small:
-            return 14
+                return 14
         case .medium:
-            return 16
+                return 16
         case .large:
-            return 18
+                return 18
         case .extraLarge:
-            return 20
+                return 20
         case .extraExtraLarge:
-            return 24
+                return 24
         case .extraExtraExtraLarge:
-            return 26
+                return 26
         case .accessibilityExtraLarge:
-            return 28
+                return 28
         default:
-            return 14
+                return 14
         }
     }
 }

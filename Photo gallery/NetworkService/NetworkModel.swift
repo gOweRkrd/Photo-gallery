@@ -1,8 +1,7 @@
-import SDWebImageSwiftUI
 import SwiftUI
 
 struct PhotoModel: Identifiable, Decodable, Hashable {
-    
+
     var id: String
     var urls: [String: String]
     var imageURL: URL?
