@@ -19,12 +19,10 @@ struct MainView: View {
                     }
                 }
                 .navigationTitle(R.MainView.title)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) { refreshButton }
-                }
             }
             .onAppear { viewModel.fetchPhotos() }
         }
+        .refreshable { viewModel.fetchPhotos() }
     }
 }
 
@@ -52,24 +50,10 @@ private extension MainView {
                 }
             }
         }
-        .listStyle(.grouped)
     }
     
     var errorImage: some View {
         Image("error404").clipShape(Capsule())
-    }
-    
-    var refreshButton: some View {
-        Button(
-            action: { viewModel.fetchPhotos() },
-            label: { refreshText }
-        )
-    }
-    
-    var refreshText: some View {
-        Text(R.MainView.refreshText)
-            .customFont(SFProDisplay.bold, category: .extraLarge)
-            .foregroundColor(Color(R.Colors.black))
     }
 }
 
