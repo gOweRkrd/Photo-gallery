@@ -37,20 +37,20 @@ private extension MainView {
     }
     
     var mainContent: some View {
-        List(viewModel.photos) { photo in
-            NavigationLink(destination: DetailView(imageURL: photo.imageURL)) {
-                VStack {
-                    if let imageURL = photo.imageURL {
-                        WebImage(url: imageURL)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .animation(.linear(duration: 0.4))
+        ScrollView {
+            LazyVStack(spacing: 10) {
+                ForEach(viewModel.photos) { photo in
+                    NavigationLink(destination: DetailView(imageURL: photo.imageURL)) {
+                        if let imageURL = photo.imageURL {
+                            WebImage(url: imageURL)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .animation(.linear(duration: 0.4))
+                        }
                     }
                 }
             }
-            .buttonStyle(PlainButtonStyle())
-            .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
         }
         .listStyle(.grouped)
     }
