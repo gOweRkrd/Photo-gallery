@@ -2,6 +2,8 @@ import Photos
 import SwiftUI
 
 final class DetailsViewModel: ObservableObject {
+    
+    @Published var isImageSaved = false
     var currentImageURL: URL?
     
     func saveImageToGallery() {
@@ -14,8 +16,12 @@ final class DetailsViewModel: ObservableObject {
                let image = UIImage(data: imageData) {
                 PHAssetChangeRequest.creationRequestForAsset(from: image)
             }
+            
         }) { success, error in
             if success {
+                DispatchQueue.main.async {
+                    self.isImageSaved = true
+                }
                 print("Image saved to gallery successfully.")
             } else {
                 if let error = error {

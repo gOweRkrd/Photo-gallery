@@ -9,6 +9,8 @@ enum StringResources {
     enum DetailView {
         static let errorText = "Image not available"
         static let buttonDescription = "Save to Gallery"
+        static let titleAlert = "IMAGE SAVED"
+        static let messageAlert = "The image has been successfully saved to your gallery."
     }
     
     enum Colors {

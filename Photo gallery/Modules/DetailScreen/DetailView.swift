@@ -6,7 +6,8 @@ struct DetailView: View {
     
     var imageURL: URL?
     @State private var scale: CGFloat = 1.0
-    
+    @State private var showAlert = false
+
     @ObservedObject var viewModel: DetailsViewModel
     
     var body: some View {
@@ -56,6 +57,15 @@ private extension DetailView {
             label: { buttonDescription }
         )
         .padding(.bottom, 20)
+        .alert(isPresented: $viewModel.isImageSaved) {
+            Alert(
+                title: Text(R.DetailView.titleAlert),
+                message: Text(R.DetailView.messageAlert),
+                dismissButton: .default(Text("OK")) {
+                    viewModel.isImageSaved = false
+                }
+            )
+        }
     }
     
     func actionSaveImageGallery() {
