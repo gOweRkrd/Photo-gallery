@@ -37,6 +37,14 @@ private extension DetailView {
             .aspectRatio(contentMode: .fit)
             .scaleEffect(scale)
             .gesture(
+                TapGesture(count: 2)
+                    .onEnded { _ in
+                        withAnimation(.spring()) {
+                            scale = scale == 1.0 ? 2.0 : 1.0
+                        }
+                    }
+            )
+            .gesture(
                 MagnificationGesture()
                     .onChanged { value in
                         scale = value.magnitude
