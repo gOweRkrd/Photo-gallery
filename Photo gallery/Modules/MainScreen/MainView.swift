@@ -37,7 +37,7 @@ private extension MainView {
     
     var mainContent: some View {
         ScrollView {
-            LazyVStack(spacing: 10) {
+            LazyVStack(spacing: 0) {
                 ForEach(viewModel.photos) { photo in
                     NavigationLink(destination: DetailView(imageURL: photo.imageURL, viewModel: detailsViewModel)) {
                         if let imageURL = photo.imageURL {

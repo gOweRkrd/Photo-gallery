@@ -23,6 +23,7 @@ struct DetailView: View {
                 saveButtonImageGallery
             }
         }
+        .navigationBarItems(trailing: shareButton)
     }
 }
 
@@ -80,5 +81,25 @@ private extension DetailView {
             .padding()
             .background(Color(R.Colors.lightBlue))
             .cornerRadius(10)
+    }
+    
+    var shareButton: some View {
+        Button(
+            action: { actionShareButton() },
+            label: { Image(systemName: "square.and.arrow.up").foregroundColor(Color(R.Colors.black)) }
+        )
+    }
+    
+    func actionShareButton() {
+        guard let imageURL = imageURL else { return }
+        let activityViewController = UIActivityViewController(
+            activityItems: [imageURL],
+            applicationActivities: nil
+        )
+        UIApplication.shared.windows.first?.rootViewController?.present(
+            activityViewController,
+            animated: true,
+            completion: nil
+        )
     }
 }
