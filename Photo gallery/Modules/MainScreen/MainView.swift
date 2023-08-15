@@ -3,7 +3,8 @@ import SwiftUI
 
 struct MainView: View {
     
-    @ObservedObject var viewModel = MainViewModel()
+    @StateObject var viewModel = MainViewModel()
+    @ObservedObject var detailsViewModel = DetailsViewModel()
     
     var body: some View {
         ZStack {
@@ -38,7 +39,7 @@ private extension MainView {
         ScrollView {
             LazyVStack(spacing: 10) {
                 ForEach(viewModel.photos) { photo in
-                    NavigationLink(destination: DetailView(imageURL: photo.imageURL)) {
+                    NavigationLink(destination: DetailView(imageURL: photo.imageURL, viewModel: detailsViewModel)) {
                         if let imageURL = photo.imageURL {
                             WebImage(url: imageURL)
                                 .resizable()
