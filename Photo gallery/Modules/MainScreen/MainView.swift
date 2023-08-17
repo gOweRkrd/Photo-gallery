@@ -36,20 +36,30 @@ private extension MainView {
     }
     
     var mainContent: some View {
-        ScrollView {
-            LazyVStack(spacing: 0) {
-                ForEach(viewModel.photos) { photo in
-                    NavigationLink(destination: DetailView(imageURL: photo.imageURL, viewModel: detailsViewModel)) {
-                        if let imageURL = photo.imageURL {
-                            WebImage(url: imageURL)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .animation(.linear(duration: 0.4))
+        ScrollViewReader { _ in
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(viewModel.photos, id: \.id) { photo in
+                        NavigationLink(
+                            destination: DetailView(
+                                imageURL: photo.imageURL,
+                                viewModel: detailsViewModel
+                            )
+                        ) {
+                            if let imageURL = photo.imageURL {
+                                WebImage(url: imageURL)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .animation(.linear(duration: 0.1))
+                            }
                         }
+                        .id(photo.id)
                     }
+                    .onAppear { viewModel.paginationPhotos() }
                 }
             }
+            .scrollIndicators(.hidden)
         }
     }
     

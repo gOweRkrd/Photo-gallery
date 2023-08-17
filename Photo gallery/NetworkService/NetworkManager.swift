@@ -3,7 +3,7 @@ import Foundation
 
 final class NetworkManager {
     
-    private let apiKey = "Z9kZrxTmQL_IfvTkfwLXJEo6ZHuLR1AnxOh1eVIlkj8"
+    private let apiKey = "dc1bcc94279ed5b3be81b9f5b7188d01565f5e9eefad81f9fb9b805daf5dec30"
     private let baseURL = "https://api.unsplash.com/photos/random"
     
     func fetchPhotos() -> AnyPublisher<[PhotoModel], Error> {
