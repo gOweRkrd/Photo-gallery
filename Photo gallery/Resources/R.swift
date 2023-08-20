@@ -17,6 +17,7 @@ enum StringResources {
         static let white = UIColor(hexString: "#FFFFFF")
         static let black = UIColor(hexString: "#000000")
         static let lightBlue = UIColor(hexString: "#74CFFB")
+        static let lightGray = UIColor(hexString: "#F6F1ED")
     }
 }
 

@@ -4,7 +4,7 @@ import SwiftUI
 struct Photo_galleryApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBarView().preferredColorScheme(.light)
+            MainView().preferredColorScheme(.light)
         }
     }
 }

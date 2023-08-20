@@ -13,14 +13,23 @@ struct DetailView: View {
     var body: some View {
         ZStack {
             Color(R.Colors.white).edgesIgnoringSafeArea(.all)
+            
+            if imageURL != nil {
+                imageLoader
+            } else {
+                errorText
+            }
+            
             VStack {
-                if imageURL != nil {
-                    imageLoader
-                } else {
-                    errorText
-                }
                 Spacer()
-                saveButtonImageGallery
+                HStack {
+                    Spacer()
+//                    favoritesButton
+                }
+                HStack {
+                    Spacer()
+                    saveButtonImageGallery
+                }
             }
         }
         .navigationBarItems(trailing: shareButton)
@@ -65,7 +74,6 @@ private extension DetailView {
             action: { actionSaveImageGallery() },
             label: { buttonDescription }
         )
-        .padding(.bottom, 20)
         .alert(isPresented: $viewModel.isImageSaved) {
             Alert(
                 title: Text(R.DetailView.titleAlert),
@@ -83,12 +91,28 @@ private extension DetailView {
     }
     
     var buttonDescription: some View {
-        Text(R.DetailView.buttonDescription)
-            .customFont(SFProDisplay.bold, category: .extraExtraLarge)
+        Image(systemName: "square.and.arrow.down.fill")
             .foregroundColor(Color(R.Colors.black))
-            .padding()
-            .background(Color(R.Colors.lightBlue))
-            .cornerRadius(10)
+            .frame(width: 50, height: 50)
+            .background(Color(R.Colors.lightGray))
+            .clipShape(Circle())
+            .padding([.bottom, .trailing], 20)
+    }
+    
+    var favoritesButton: some View {
+        Button(
+            action: {},
+            label: { favoritesButtonDescription }
+        )
+    }
+    
+    var favoritesButtonDescription: some View {
+        Image(systemName: "heart.fill")
+            .foregroundColor(Color(R.Colors.black))
+            .frame(width: 50, height: 50)
+            .background(Color(R.Colors.lightGray))
+            .clipShape(Circle())
+            .padding([.bottom, .trailing], 20)
     }
     
     var shareButton: some View {

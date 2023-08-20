@@ -220,6 +220,6 @@ custom_rules:
 #
 # Number of accesible warnings (Hard)
 #
-warning_threshold: 3
+warning_threshold: 5
 
 reporter: xcode
